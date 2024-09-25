@@ -3,10 +3,10 @@
 int main(){
     double a, b;
 
-    printf("Entrez la premiere nombre :");
+    printf("Entrez le premiere nombre :");
     scanf("%lf", &a);
 
-    printf("Entez la deuxieme nombre :");
+    printf("Entez le deuxieme nombre :");
     scanf("%lf", &b);
 
     printf("Affichage des resultats :\n");
