@@ -6,7 +6,7 @@ int Pair(int nombre){
     } else {
         printf("%d est un nombre impair.\n", nombre);
     }
-
+    return nombre;
 }
 
 int main(){
@@ -15,8 +15,7 @@ int main(){
     printf("Entrez un entier: ");
     scanf("%d", &nombre);
 
-    
-    printf("%d! = %d\n", nombre, Pair(nombre));
+    Pair(nombre);
 
     return 0;
 }
