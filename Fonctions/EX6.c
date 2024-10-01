@@ -1,22 +1,29 @@
 #include <stdio.h>
 
-int Pair(int nombre){
-    if (nombre % 2 == 0) {
-        printf("%d est un nombre pair.\n", nombre);
-    } else {
-        printf("%d est un nombre impair.\n", nombre);
+void Fibfunc(int n) {
+
+    if(n < 1) {
+        printf("Entrer nombre valide");
+        return; 
     }
 
+    int Fib1 = 0;
+    int Fib2 = 1;
+
+    for(int i = 0; i <= n; i++) {
+            printf("%d\n", Fib1);
+            int nombreactulle = Fib1 + Fib2;
+            Fib1 = Fib2;
+            Fib2 = nombreactulle;
+    } 
 }
 
-int main(){
-    int nombre;
+int main() {
+    int n;
 
-    printf("Entrez un entier: ");
-    scanf("%d", &nombre);
-
-    
-    printf("%d! = %d\n", nombre, Pair(nombre));
+    printf("Entrer un entier: ");
+    scanf("%d", &n);
+    Fibfunc(n);
 
     return 0;
-}
+}   
